@@ -8,6 +8,7 @@
 }
 
 .home, .reports, .about .card {
+  flex-wrap: wrap;
   display: flex;
   height: 90vh;
   align-items: center;

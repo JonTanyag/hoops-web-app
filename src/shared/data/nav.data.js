@@ -25,7 +25,7 @@ export const SideBarItems = [
         cName: 'nav-text'
     },
     {
-        title: 'Card',
+        title: 'Players',
         path: '/card',
         icon: <RioIcons.RiProfileLine />,
         cName: 'nav-text'

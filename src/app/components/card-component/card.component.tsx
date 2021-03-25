@@ -7,21 +7,24 @@ import { Players } from '../../../shared/interface/Players';
 export const Card: React.FC = () => {
     const [player, setPlayers] = useState();
 
-   
-
     return (
         <>
-            
+            <div className="main">
                 {BasketBallPlayers.map((item, index) => {
                     const av = item.image;
-                    console.log('HAHAHAHAHAH', av)
-                    return(
+                    return (
                         <div key={index} className="container">
-                            {item.lastName}
-                            <img src={av.default} alt="" height={50} width={50}/>
+                            <div className="firstname">
+                                {item.firstName}
+                            </div>
+                            <div className="lastname">
+                                {item.lastName}
+                            </div>
+                            <img className="img" src={av.default} alt="" height={50} width={50} />
                         </div>
                     )
                 })}
+            </div>
         </>
     )
 }

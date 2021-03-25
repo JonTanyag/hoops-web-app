@@ -1,12 +1,35 @@
-.container {
-    height: 100px;
-    width: 200px;
-    border-width: 1px;
-    border-radius: 2px;
-    border-color: '#ddd';
-    border-bottom-width: 0;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 10px;
-    box-shadow: 1px 1px 1px 1px #000;
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 90%;
+    width: 100%;
+    padding: 40px;
+
+    .container {
+        background-color: #fff;
+        height: 100px;
+        width: 200px;
+        border-width: 1px;
+        border-radius: 2px;
+        border-bottom-width: 0;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 10px;
+        box-shadow: 1px 1px 1px 1px #000;
+
+        .firstname {
+            float: left;
+        }
+
+        .lastname {
+            float: left;
+        }
+
+        .img {
+            float: right;
+        }
+    }
+
 }
+

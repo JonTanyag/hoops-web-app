@@ -54,4 +54,18 @@ export const Players = [{
     height: '176cm',
     weight: '60kg',
     image: require('../../assets/money-heist-dali-48.png')
+  }, {
+    lastName: 'Clover',
+    firstName: 'Blac',
+    position: 'Forward',
+    height: '176cm',
+    weight: '60kg',
+    image: require('../../assets/money-heist-dali-48.png')
+  }, {
+    lastName: 'Sukehiro',
+    firstName: 'Yami',
+    position: 'Forward',
+    height: '176cm',
+    weight: '60kg',
+    image: require('../../assets/money-heist-dali-48.png')
   }]
