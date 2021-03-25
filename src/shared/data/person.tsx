@@ -1,0 +1,57 @@
+export const Players = [{
+    lastName: 'Rogers',
+    firstName: 'Captain',
+    position: 'Forward',
+    height: '176cm',
+    weight: '60kg',
+    image: require('../../assets/captain-america-48.png')
+  }, {
+    lastName: 'Deadpool',
+    firstName: 'Captain',
+    position: 'Forward',
+    height: '176cm',
+    weight: '60kg',
+    image: require('../../assets/deadpool-48.png')
+  }, {
+    lastName: 'X-Men',
+    firstName: 'Gambit',
+    position: 'Forward',
+    height: '176cm',
+    weight: '60kg',
+    image: require('../../assets/gambit-48.png')
+  }, {
+    lastName: 'Punisher',
+    firstName: 'The',
+    position: 'Forward',
+    height: '176cm',
+    weight: '60kg',
+    image: require('../../assets/punisher-48.png')
+  }, {
+    lastName: 'Groot',
+    firstName: 'I am',
+    position: 'Forward',
+    height: '176cm',
+    weight: '60kg',
+    image: require('../../assets/groot-48.png')
+  }, {
+    lastName: 'Hedgehog',
+    firstName: 'Sonic',
+    position: 'Forward',
+    height: '176cm',
+    weight: '60kg',
+    image: require('../../assets/sonic-the-hedgehog-48.png')
+  }, {
+    lastName: 'Spider Man',
+    firstName: 'Amazing',
+    position: 'Forward',
+    height: '176cm',
+    weight: '60kg',
+    image: require('../../assets/spider-man-head-48.png')
+  }, {
+    lastName: 'Heist',
+    firstName: 'Money',
+    position: 'Forward',
+    height: '176cm',
+    weight: '60kg',
+    image: require('../../assets/money-heist-dali-48.png')
+  }]

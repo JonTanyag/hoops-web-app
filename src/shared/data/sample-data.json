@@ -1,0 +1,71 @@
+[{
+    "id": "47cda513-226a-4401-b844-f1e5e00ba680",
+    "title": "Papawis",
+    "venue": "Taft Food by the Court",
+    "date": "Feb 19, 2020",
+    "startTime": "4PM",
+    "endTime": "6PM",
+    "host": "Captain",
+    "image": "../assets/captain-america-48.png",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum rhoncus"
+  }, {
+    "id": "27a5c35c-8c29-4944-ae98-ed14078b90c9",
+    "title": "Chill",
+    "venue": "Mandaluyong Food by the Court",
+    "date": "Feb 21, 2020",
+    "startTime": "4PM",
+    "endTime": "6PM",
+    "host": "Deadpool",
+    "image": "../assets/deadpool-48.png",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum rhoncus"
+  }, {
+    "id": "3bff022d-f4ef-4bfc-b0d6-7cd18faffa89",
+    "title": "Talon",
+    "venue": "Taft Food by the Court",
+    "date": "Feb 20, 2020",
+    "startTime": "4PM",
+    "endTime": "6PM",
+    "host": "Groot",
+    "image": "../assets/groot-48.png",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum rhoncus"
+  }, {
+    "id": "5036fadc-109c-4f79-aa68-075e942f0515",
+    "title": "Ensayo",
+    "venue": "Taft Food by the Court",
+    "date": "Feb 22, 2020",
+    "startTime": "5PM",
+    "endTime": "6PM",
+    "host": "Punisher",
+    "image": "../assets/punisher-48.png",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum rhoncus"
+  }, {
+    "id": "d1e792d8-0a08-4f48-8700-79105a60e8d5",
+    "title": "Practice Game",
+    "venue": "Taft Food by the Court",
+    "date": "Feb 25, 2020",
+    "startTime": "3PM",
+    "endTime": "6PM",
+    "host": "Spider Man",
+    "image": "../assets/spider-man-head-48.png",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum rhoncus"
+  }, {
+    "id": "1ef405ca-bb7c-42b9-a30a-aeb906ca2749",
+    "title": "Papawis",
+    "venue": "Taft Food by the Court",
+    "date": "March 19, 2020",
+    "startTime": "4PM",
+    "endTime": "6PM",
+    "host": "Sonic",
+    "image": "../assets/sonic-the-hedgehog-48.png",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum rhoncus"
+  }, {
+    "id": "67670253-0b85-4260-8c84-3469fc24b342",
+    "title": "HAHAHAH",
+    "venue": "Taft Food by the Court",
+    "date": "March 17, 2020",
+    "startTime": "3PM",
+    "endTime": "6PM",
+    "host": "Money",
+    "image": "../assets/money-heist-dali-48.png",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum rhoncus"
+  }]

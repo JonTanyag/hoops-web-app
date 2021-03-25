@@ -1,0 +1,48 @@
+
+.report-panel {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    width: 800px;
+    border: 1px solid #c3c3c3;
+
+    .sub-panel {
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+
+        .first-panel {
+            height: 300px;
+            width: 50%;
+            text-align: center;
+            border: 1px solid #c3c3c3;
+        }
+        
+        
+        .second-panel {
+            height: 300px;
+            width: 50%;
+            text-align: center;
+            border: 1px solid #c3c3c3;
+        }
+    }
+
+    .sub-panel2 {
+        display: flex;
+        padding: 5px;
+
+        .third-panel {
+            height: 200px;
+            width: 800px;
+            text-align: center;
+            border: 1px solid #c3c3c3;
+        }
+    }
+}
+
+
+
+
+
+
+
