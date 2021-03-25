@@ -18,7 +18,7 @@ export const Card: React.FC = () => {
                     return(
                         <div key={index} className="container">
                             {item.lastName}
-                            <img src={av} alt="" height={50} width={50}/>
+                            <img src={av.default} alt="" height={50} width={50}/>
                         </div>
                     )
                 })}
