@@ -14,13 +14,31 @@ export const Card: React.FC = () => {
                     const av = item.image;
                     return (
                         <div key={index} className="container">
-                            <div className="firstname">
-                                {item.firstName}
+                            <div className="details-section">
+                                <div className="name">
+                                    <span>Name: {item.firstName} {item.lastName} </span>
+                                </div>
+                                <div className="attributes">
+                                    <div>
+                                        <span>
+                                            Position: {item.position}
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <span>
+                                            Height: {item.height}
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <span>
+                                            Weight: {item.weight}
+                                        </span>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="lastname">
-                                {item.lastName}
+                            <div className="image-section">
+                                <img className="img" src={av.default} alt="" height={50} width={50} />
                             </div>
-                            <img className="img" src={av.default} alt="" height={50} width={50} />
                         </div>
                     )
                 })}

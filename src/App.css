@@ -7,9 +7,9 @@
   font-family: 'Lato', sans-serif;
 }
 
-.home, .reports, .about .card {
-  flex-wrap: wrap;
+.home, .reports, .about .card {  
   display: flex;
+  flex-wrap: wrap;
   height: 90vh;
   align-items: center;
   justify-content: center;
