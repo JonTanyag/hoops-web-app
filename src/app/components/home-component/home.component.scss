@@ -1,10 +1,34 @@
 .feed-section {
-    background-color: #060b26;
-    width: 500px;
-    flex-wrap: wrap;
+    background-color: gray;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    .create-section {
-        background-color: green;
+    * {
+        outline: none;
     }
 
+    .create-section {
+        min-height: 60%;
+        width: 60%;
+        overflow: auto;
+        border-radius: 10px;
+        padding: 20px;
+        position: relative;
+
+        .header {
+            font-size: 45.83px;
+            font-style: italic;
+            color: #fff;
+            font-family: "Merriweather", serif;
+        }
+
+        .sub-header {
+            text-align: justify;
+            font-size: 23px;
+            color: #8fffee;
+            margin-top: 20px;
+        }
+    }
 }
