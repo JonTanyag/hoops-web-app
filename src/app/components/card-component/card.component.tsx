@@ -5,8 +5,8 @@ import { Players as $BasketBallPlayers } from '../../../shared/data/person'
 import { Players } from '../../../shared/interface/Players';
 import { Ref } from '../../../shared/interface/Ref';
 import { Props } from '../../../shared/interface/Props';
-import { useRxEffect } from '../../../shared/utils/utils';
-import { cloneDeep, cloneDeepWith } from 'lodash';
+import { cloneDeep } from 'lodash';
+import { of } from 'rxjs';
 
 interface State {
     loading: boolean;
@@ -29,12 +29,20 @@ export const Card = memo(
         const [state, setState] = useState<State>(initialState(props));
 
         useEffect(() => {
-            const list = cloneDeep($BasketBallPlayers);
-            const sourcesList = cloneDeep($BasketBallPlayers);
 
-            setState(prevState => ({...prevState, list, sourcesList}));
+            const subscribe = of($BasketBallPlayers).subscribe(res => {
+                const list = cloneDeep(res);
+                const sourcesList = cloneDeep(res);
+
+                setState(prevState => ({ ...prevState, list, sourcesList }));                
+            })
+
+            return () => {
+                subscribe.unsubscribe();
+            }
+            
         }, [])
-        
+
         return (
             <>
                 <div className="main">

@@ -33,6 +33,7 @@ export const Home = memo(
             const sourcesList = cloneDeep(res);
 
             setState(prevState => ({ ...prevState, list, sourcesList }));
+            
         }), []);
 
 
