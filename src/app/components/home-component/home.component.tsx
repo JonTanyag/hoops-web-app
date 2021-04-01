@@ -62,7 +62,6 @@ export const Home = memo(
                                                 <Image
                                                     avatar
                                                     src={item.pic}>
-
                                                 </Image>
 
                                             </List.Item>
