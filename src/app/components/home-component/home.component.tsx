@@ -4,7 +4,8 @@ import { $GetDataService } from '../../../shared/service/getData';
 import { StudentModel } from '../../../shared/interface/Student';
 import { Ref } from '../../../shared/interface/Ref';
 import { Props } from '../../../shared/interface/Props';
-import {cloneDeep} from "lodash";
+import { cloneDeep } from "lodash";
+import { useRxEffect } from "../../../shared/utils/utils";
 
 
 interface State {
@@ -23,17 +24,16 @@ const initialState = (props: Props) => {
     };
 }
 
-
 export const Home = memo(
     forwardRef<Ref, Props>((props, ref) => {
         const [state, setState] = useState<State>(initialState(props));
 
-        useEffect(() => $GetDataService.getPlayers().subscribe(res => {
+        useRxEffect(() => $GetDataService.getPlayers().subscribe(res => {
             const list = cloneDeep(res);
-            const sourceList = cloneDeep(res);
+            const sourcesList = cloneDeep(res);
 
-            
-        }), [])
+            setState(prevState => ({ ...prevState, list, sourcesList }));
+        }), []);
 
 
         return (
@@ -48,9 +48,17 @@ export const Home = memo(
                             and typesetting industry. Lorem Ipsum has been <br />
                             the industry's standard dummy text ever since.
                         </div>
+                        <div>
+                            {
+                                state.list.map((item, index) => {
+
+                                })
+                            }
+
+                        </div>
                     </div>
                 </div>
             </>
         )
-}),
-); 
+    }),
+);
