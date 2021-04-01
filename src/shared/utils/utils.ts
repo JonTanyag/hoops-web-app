@@ -4,11 +4,15 @@ import { DependencyList, useCallback, useEffect, useState } from 'react';
 
 export const useRxEffect = (subscribe: () => Subscription, deps?: DependencyList) => {
 	const [sub, setSub] = useState<Subscription | null>(null);
+    
+    console.log('Check sub------------------------------------- ', sub);
+    console.log('Check deps------------------------------------- ', deps);
 
 	const unsub = useCallback(() => {
 		if (sub) sub.unsubscribe();
 	}, [sub]);
 
+    console.log('Check unsub------------------------------------- ', unsub);
 	useEffect(() => {
 		const subscription = subscribe();
 		setSub(subscription);

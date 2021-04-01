@@ -6,7 +6,7 @@ import { Ref } from '../../../shared/interface/Ref';
 import { Props } from '../../../shared/interface/Props';
 import { cloneDeep } from "lodash";
 import { useRxEffect } from "../../../shared/utils/utils";
-
+import { Button, Icon, Image, Input, List } from "semantic-ui-react";
 
 interface State {
     loading: boolean;
@@ -49,12 +49,27 @@ export const Home = memo(
                             the industry's standard dummy text ever since.
                         </div>
                         <div>
-                            {
-                                state.list.map((item, index) => {
+                            <List
+                                divided
+                                verticalAlign='middle'>
+                                {
+                                    state.list.map((item, index) => {
 
-                                })
-                            }
+                                        return (
+                                            <List.Item
+                                                {...(state.expandedList.includes(index)) ? { className: 'expanded' } : {}}
+                                                key={item.id}>
+                                                <Image
+                                                    avatar
+                                                    src={item.pic}>
 
+                                                </Image>
+
+                                            </List.Item>
+                                        );
+                                    })
+                                }
+                            </List>
                         </div>
                     </div>
                 </div>
